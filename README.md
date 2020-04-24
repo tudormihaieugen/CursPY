@@ -1,1 +1,1 @@
-Curs Python Atelierul Digital Google
+Curs Python "Atelierul Digital Google"
