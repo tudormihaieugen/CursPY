@@ -9,7 +9,7 @@ In cazul in care valoarea este un sir de numere afisati pe ecran mesajul “Siru
 
 sir = input("Introduceti un sir: ")
 
-if sir.lstrip('-+').isdigit():
+if sir.isdigit():
     sir = int(sir)
     print("Sirul de numere", sir, "a fost gasit de Mihai")
 else:
