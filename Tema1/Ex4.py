@@ -12,7 +12,7 @@ if nr.lstrip('-+').isdigit():
     nr = int(nr)
 elif "." in nr:
     a = nr.split('.')
-    if len(a) == 2 and a[0].isdigit() and a[1].isdigit():
+    if len(a) == 2 and a[0].lstrip('-+').isdigit() and a[1].isdigit():
         nr = float(nr)
 else:
     print("Nu ati introdus un numar")

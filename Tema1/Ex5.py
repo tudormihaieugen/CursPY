@@ -57,5 +57,7 @@ while True:
         elif a == 0:
             print("Sfarsit program!")
             break
+        else:
+            print("Alegerea nu exista. Reincercati.")
     else:
-        print("Alegerea nu exista. Reincercati.")
+        print("Nu ati introdus un numar. Reincercati.")
