@@ -28,36 +28,32 @@ while True:
         """)
     a = input("Alegeti o optiune: ")
 
-    if a.isdigit():
-        a = int(a)
-        if a == 1:
-            print("1 - Afisare lista de cumparaturi: ")
-            print(lista)
-        elif a == 2:
-            element = input("2 - Adaugati elementul: ")
-            lista.append(element)
-        elif a == 3:
-            element = input("3 - Sterge elementul: ")
-            if element in lista:
-                print("Ati sters cu succes elementul: ", element, "de pe pozitia: ", lista.index(element))
-                lista.remove(element)
-            else:
-                print("Elementul introdus nu se afla in lista")
-        elif a == 4:
-            print("4 - Stergere lista de cumparaturi")
-            lista.clear()
-            print("Ati sters cu succes lista de cumparaturi!")
-        elif a == 5:
-            print("Cautare in lista de cumparaturi")
-            element = input("Elementul pe care doriti sa-l cautati: ")
-            if element in lista:
-                print("Elementul", element, "se afla in lista de cumparaturi pe pozitia: ", lista.index(element))
-            else:
-                print("Elementul", element, "nu se afla in lista de cumparaturi")
-        elif a == 0:
-            print("Sfarsit program!")
-            break
+    if a == "1":
+        print("1 - Afisare lista de cumparaturi: ")
+        print(lista)
+    elif a == "2":
+        element = input("2 - Adaugati elementul: ")
+        lista.append(element)
+    elif a == "3":
+        element = input("3 - Sterge elementul: ")
+        if element in lista:
+            print("Ati sters cu succes elementul: ", element, "de pe pozitia: ", lista.index(element))
+            lista.remove(element)
         else:
-            print("Alegerea nu exista. Reincercati.")
+            print("Elementul introdus nu se afla in lista")
+    elif a == "4":
+        print("4 - Stergere lista de cumparaturi")
+        lista.clear()
+        print("Ati sters cu succes lista de cumparaturi!")
+    elif a == "5":
+        print("Cautare in lista de cumparaturi")
+        element = input("Elementul pe care doriti sa-l cautati: ")
+        if element in lista:
+            print("Elementul", element, "se afla in lista de cumparaturi pe pozitia: ", lista.index(element))
+        else:
+            print("Elementul", element, "nu se afla in lista de cumparaturi")
+    elif a == "0":
+        print("Sfarsit program!")
+        break
     else:
-        print("Nu ati introdus un numar. Reincercati.")
+        print("Alegerea nu exista. Reincercati.")
