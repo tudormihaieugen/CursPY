@@ -1,4 +1,5 @@
-"""Creati un program care are ca scop un meniu.
+"""
+Creati un program care are ca scop un meniu.
 Meniul se va selecta prin introducerea de la tastaura a unui numar intre 1 si 5 captat intr-o variabila.
 Prezentati prin afisare acest sir de caractere:
      1 – Afisare lista de cumparaturi

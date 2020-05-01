@@ -8,7 +8,7 @@ Daca numarul este zero afisati “Numarul este 0”,
 
 nr = input("Dati un numar: ")
 
-if nr.lstrip('-+').isdigit():
+if nr[0] == "-" and nr[1:].isdigit() or nr.isdigit():
     nr = int(nr)
 elif "." in nr:
     a = nr.split('.')
