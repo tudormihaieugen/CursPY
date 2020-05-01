@@ -1,7 +1,6 @@
 """Validare CNP"""
 import datetime
 
-COD = "279146358279"
 while True:
     CNP = input("Introduceti un CNP (0 = iesire): ")
     if CNP == "0":
@@ -45,6 +44,7 @@ while True:
         continue
 
     control = 0
+    COD = "279146358279"
     for i in range(12):
         control += int(CNP[i]) * int(COD[i])  #formula cifra control
     control = control % 11
