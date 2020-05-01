@@ -3,6 +3,7 @@ import datetime
 
 while True:
     CNP = input("Introduceti un CNP (0 = iesire): ")
+
     if CNP == "0":
         break
     if len(CNP) != 13:
