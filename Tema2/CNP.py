@@ -55,6 +55,7 @@ while True:
 
     if control != C:
         print("CNP invalid! Cifra de control nu corespunde!")
+        print("Cifra de control corecta:", control)
         continue
 
     print("CNP VALID")
