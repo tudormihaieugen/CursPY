@@ -40,6 +40,7 @@ while True:
     if 46 < JJ < 51 or JJ > 52 or JJ == 0:
         print("CNP invalid! Codul judetului nu exista!")
         continue
+
     if NNN == 0:
         print("CNP invalid! Cifrele de la 9 la 11 nu pot fi toate 0!")
         continue
