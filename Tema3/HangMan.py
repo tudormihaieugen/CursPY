@@ -76,7 +76,7 @@ while tries > 0:
 
 if tries == 0:
     print("GAME OVER")
+    print("Cuvantul era: " + word)
 else:
+    print(word)
     print("Felicitari! Ati castigat!")
-
-print("Cuvantul era: " + word)
