@@ -72,10 +72,11 @@ while tries > 0:
     else:
         wrong += char
         tries -= 1
-        print("Litera nu se afla in cuvant! Incercari ramase: ", tries)
+        print("Litera " + char + " nu se afla in cuvant! Incercari ramase: ", tries)
 
 if tries == 0:
     print("GAME OVER")
-    print("Cuvantul era: " + word)
 else:
     print("Felicitari! Ati castigat!")
+
+print("Cuvantul era: " + word)
