@@ -28,8 +28,8 @@ x = [['istorie', 'matematica', 'filozofie', 'romana', 'engleza', 'muzica', 'info
 
 print("""
     1 – Scoala
-    2 – Bucatarie
-    3 – Gastronomie
+    2 – Obiecte
+    3 – Mancare
     4 – Matematica
     5 - Biologie
     0 - Random
@@ -52,6 +52,7 @@ for i in range(len(word)):
     guess.append('_')
 
 while tries > 0:
+    print("".join(guess))
     char = input("Introduceti o litera: ")
 
     if len(char) != 1 or char.isdigit():
@@ -72,8 +73,6 @@ while tries > 0:
         wrong += char
         tries -= 1
         print("Litera nu se afla in cuvant! Incercari ramase: ", tries)
-
-    print("".join(guess))
 
 if tries == 0:
     print("GAME OVER")
