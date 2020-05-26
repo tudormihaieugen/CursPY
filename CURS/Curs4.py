@@ -56,10 +56,10 @@ for i in title:
 
 table = f'<table>{thead}<tbody>{tr}</tbody></table>'
 #html
-file = open(r'C:\Users\40771\Desktop\fileGoogle.html', 'w')
+file = open('BNR.html', 'w')
 file.writelines(table)
 file.close()
 
 #excel
 df = pd.DataFrame(data_list, columns=header)
-df.to_excel('CursBNR_ExcelGoogle.xls', sheet_name='BNR', header=header, index=0)  #index = 0 nu adauga primul rand cu numarul de linii
+df.to_excel('BNR.xls', sheet_name='BNR', header=header, index=0)  #index = 0 nu adauga primul rand cu numarul de linii

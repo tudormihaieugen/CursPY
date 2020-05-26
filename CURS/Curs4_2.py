@@ -6,10 +6,10 @@ browser = webdriver.Chrome(r'C:\Program Files (x86)\Google\Chrome\Application\ch
 browser.get('https://www.bnr.ro/files/xml/nbrfxrates2019.htm')
 table = browser.find_element_by_xpath('//*[@id="Data_table"]')
 
-# #salvare in txt
-# fisier = open('curs_valutar_bnr_google.txt', 'w+')
-# fisier.writelines(table.text)
-# fisier.close()
+#TXT
+fisier = open('BNR_ALL.txt', 'w+')
+fisier.writelines(table.text)
+fisier.close()
 
 tabel = table.text
 lista = tabel.split('\n')
@@ -26,9 +26,9 @@ for j in range(0, len(header)):
         else:
             dictionar[header[int(j)]].append(float(lista[i]))
 
-#excel
+#EXCEL
 df = pd.DataFrame(dictionar)
-df.to_excel("BNR_ALL_VALUES_GOOGLE.xls", sheet_name='BNR', header=header, index=0)
+df.to_excel("BNR_ALL.xls", sheet_name='BNR', header=header, index=0)
 
 browser.close()
 
