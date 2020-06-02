@@ -7,7 +7,6 @@ data_list = list()
 header = list()
 header.append("Nr. crt.")
 header.append("Județ")
-
 first = True
 
 for day in range(3, 25):
