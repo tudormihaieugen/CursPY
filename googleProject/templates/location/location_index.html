@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <a href="{% url 'location:create_location' %}">Add new location</a>
+    <table>
+        <thead>
+        <tr>
+            <th>NR. Crt.</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+        {% for item in all_locations %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ item.country }}</td>
+                <td>{{ item.city }}</td>
+                <td><a href="{% url 'location:update_location' item.id %}">Edit</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

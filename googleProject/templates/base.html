@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>My First Django app</title>
+</head>
+<body>
+<section>
+    <a href="{% url 'location:location_list' %}">Location List</a>
+     <div>
+         {% block content %}
+         {% endblock %}
+     </div>
+</section>
+</body>
+</html>
