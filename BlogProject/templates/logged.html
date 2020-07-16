@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block logged %}
+    <p class="text-right">
+    {% if request.user.first_name %}
+        <b>{{ request.user.get_full_name }}</b>
+    {% else %}
+        <b> {{ user.username }}</b>
+    {% endif %}
+    </p>
+        <p class="text-right">
+            <a href="http://localhost:8000/posts/" class="btn btn-warning" role="button">Main Page</a>
+            <a href="{% url 'logout' %}" class="btn btn-danger" role="button">Logout</a>
+        </p>
+
+{% endblock logged %}
